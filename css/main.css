@@ -16,9 +16,22 @@ a:active, a:focus{
 }
 
 header {
-      height: 100px;
+      height: 80px;
       width: 100%;
       background-color: #252525;
+}
+h1 {
+      font-family: arial, sans-serif; 
+      margin: 0;
+      padding: 20px 0 5px 40px;
+      color: #fff;
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: bold;
+}
+
+ul#tags-legend {
+      margin: 0;
 }
 
 ul.tags {
@@ -27,4 +40,16 @@ ul.tags {
 ul.tags li {
       font-size: 2em;
       margin-right: 10px;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 400;
+}
+.label-warning {
+      color: #252525; 
+      background-color: #ffd351;
+}
+.label-primary {
+      background-color: #4a6785; 
+}
+.label-success {
+      background-color: #14892c; 
 }
