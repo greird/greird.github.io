@@ -30,6 +30,19 @@ h1 {
       font-weight: bold;
 }
 
+div#social-network {
+      margin: 0 0 0 40px;
+}
+div#social-network i {
+      margin-right: 15px; 
+}
+div#social-network a {
+      color: #fff;
+}
+div#social-network a:hover {
+      color: #ffd351;
+}
+
 ul#tags-legend {
       margin: 0;
 }
@@ -52,4 +65,7 @@ ul.tags li {
 }
 .label-success {
       background-color: #14892c; 
+}
+ul.tags a {
+      text-decoration: none;
 }
