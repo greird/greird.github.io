@@ -43,10 +43,6 @@ div#social-network a:hover {
       color: #ffd351;
 }
 
-ul#tags-legend {
-      margin: 0;
-}
-
 ul.tags {
       margin: 50px 0 -20px 0;
 }
@@ -55,6 +51,12 @@ ul.tags li {
       margin-right: 10px;
       font-family: 'PT Sans', sans-serif;
       font-weight: 400;
+}
+ul.tags li .fa {
+      position: relative;
+      top: -12px;
+      right: -8px;
+      font-size: 0.5em;
 }
 .label-warning {
       color: #252525; 
@@ -67,5 +69,19 @@ ul.tags li {
       background-color: #14892c; 
 }
 ul.tags a {
+      display: inline;
       text-decoration: none;
+}
+
+footer {
+      position: absolute;
+      bottom: 0;
+      height: 50px;
+      width: 100%;
+      background-color: #252525;
+}
+ul#tags-legend {
+      margin: 0;
+      padding: 15px 0 0 20px;
+      text-transform: uppercase;
 }
