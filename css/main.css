@@ -11,6 +11,9 @@ img {
       border: 0;
 }
 
+a {
+      text-decoration: none;
+}
 a:active, a:focus{
       outline: none;
 }
@@ -84,4 +87,7 @@ ul#tags-legend {
       margin: 0;
       padding: 15px 0 0 20px;
       text-transform: uppercase;
+}
+ul#tags-legend a {
+      text-decoration: none;
 }
