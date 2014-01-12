@@ -56,12 +56,33 @@ ul.tags li {
       font-family: 'PT Sans', sans-serif;
       font-weight: 400;
 }
+ul.tags li .badge {
+      position: relative;
+      top: -12px;
+      right: -8px;
+      font-size: 0.4em;
+
+}
+ul.tags li.label-warning .badge {
+      background-color: #252525;
+      color: #ffd351;
+}
+ul.tags li.label-success .badge {
+      background-color: #fff;
+      color: #14892c;
+}
+ul.tags li.label-primary .badge {
+      background-color: #fff;
+      color: #4a6785;
+}
+
 ul.tags li .fa {
       position: relative;
       top: -12px;
       right: -8px;
       font-size: 0.5em;
 }
+
 .label-warning {
       color: #252525; 
       background-color: #ffd351;
