@@ -20,10 +20,11 @@ a:active, a:focus{
 
 
 div#social-network {
+      position: absolute;
       height: 50px;
       width: 250px;
       position: relative;
-      margin: 25% auto;
+      margin: 22% auto 0 auto;
 }
 div#social-network i {
       margin-right: 15px; 
