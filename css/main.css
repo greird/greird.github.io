@@ -22,12 +22,14 @@ a:active, a:focus{
 div#social-network {
       position: absolute;
       height: 50px;
-      width: 250px;
+      width: 500px;
       position: relative;
       margin: 22% auto 0 auto;
 }
 div#social-network i {
       margin-right: 15px; 
+      font-size: 3em;
+      text-indent: 0.5em;
 }
 div#social-network a {
       color: #fff;
