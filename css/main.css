@@ -4,7 +4,7 @@ html, body {
       color: #252525;
 }
 body {
-      background: #000 url('../img/bg.jpg') repeat top left;
+      background-color: #252525;
 }
 
 img {
@@ -18,24 +18,13 @@ a:active, a:focus{
       outline: none;
 }
 
-header {
-      height: 80px;
-      width: 100%;
-      background-color: #252525;
-      margin: 0 0 40px 0;
-}
-h1 {
-      font-family: arial, sans-serif; 
-      margin: 0;
-      padding: 20px 0 5px 40px;
-      color: #fff;
-      font-size: 1em;
-      text-transform: uppercase;
-      font-weight: bold;
-}
 
 div#social-network {
-      margin: 0 0 0 40px;
+      position: absolute;
+      height: 50px;
+      width: 250px;
+      position: relative;
+      margin: 22% auto 0 auto;
 }
 div#social-network i {
       margin-right: 15px; 
@@ -45,71 +34,4 @@ div#social-network a {
 }
 div#social-network a:hover {
       color: #ffd351;
-}
-
-ul.tags {
-      line-height: 50px;
-}
-ul.tags li {
-      font-size: 2em;
-      margin-right: 10px;
-      font-family: 'PT Sans', sans-serif;
-      font-weight: 400;
-}
-ul.tags li .badge {
-      position: relative;
-      top: -12px;
-      right: -8px;
-      font-size: 0.4em;
-
-}
-ul.tags li.label-warning .badge {
-      background-color: #252525;
-      color: #ffd351;
-}
-ul.tags li.label-success .badge {
-      background-color: #fff;
-      color: #14892c;
-}
-ul.tags li.label-primary .badge {
-      background-color: #fff;
-      color: #4a6785;
-}
-
-ul.tags li .fa {
-      position: relative;
-      top: -12px;
-      right: -8px;
-      font-size: 0.5em;
-}
-
-.label-warning {
-      color: #252525; 
-      background-color: #ffd351;
-}
-.label-primary {
-      background-color: #4a6785; 
-}
-.label-success {
-      background-color: #14892c; 
-}
-ul.tags a {
-      display: inline;
-      text-decoration: none;
-}
-
-footer {
-      position: absolute;
-      bottom: 0;
-      height: 50px;
-      width: 100%;
-      background-color: #252525;
-}
-ul#tags-legend {
-      margin: 0;
-      padding: 15px 0 0 20px;
-      text-transform: uppercase;
-}
-ul#tags-legend a {
-      text-decoration: none;
 }
