@@ -24,8 +24,7 @@ div#container a, div#container a:active, div#container a:hover {
       font-style: italic;
 }
 div#container a:hover {
-      border-bottom: 1px solid #4082CA;
-      color: #4082CA;
+      border-bottom: 1px solid #FFB257;
 }
 
 section {
