@@ -1,9 +1,13 @@
 body {
-      background-color: #fafafa;
-      padding: 100px;
+  background-color: #fafafa;
 }
-p {
-      /*font-family: 'PT Sans';*/
+
+div#container {
+  height: 100%;
+  padding: 100px;
+}
+
+div#container p {
       font-family: 'Georgia';
       line-height: 1.5em;
       font-size: 2.2em;
@@ -11,15 +15,81 @@ p {
       padding: 30px;
       color: #252525;
 }
-a, a:active, a:hover {
+div#container a, div#container a:active, div#container a:hover {
       display: inline-block;
-      text-decoration: none; 
+      text-decoration: none;
       border-bottom: 1px solid #252525;
       color: #252525;
       cursor: pointer;
       font-style: italic;
 }
-a:hover {
+div#container a:hover {
       border-bottom: 1px solid #4082CA;
       color: #4082CA;
+}
+
+section {
+  background: #fff;
+  padding: 50px 350px;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media (max-width: 1280px) {
+  section {
+    padding: 30px 250px;
+  }
+}
+@media (max-width: 1024px) {
+  section {
+    padding: 50px;
+  }
+}
+
+section.summary h1 {
+  margin: 0 0 14px 0;
+  font-family: FranklinGothic-Medium;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #2C2D2D;
+  line-height: 50px;
+}
+
+section p {
+  padding: 0 0 20px 0;
+  margin: 0;
+  font-family: Georgia;
+  font-size: 17px;
+  color: #2C2D2D;
+  line-height: 30px;
+}
+section.summary p {
+  padding: 0;
+  font-style: italic;
+}
+
+section.summary a.readmore {
+  display: inline-block;
+  margin: 30px 20px 0 0;
+  font-family: AvenirNext-Medium;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+section.summary a.readmore:hover {
+  border-color: #FFB257;
+}
+
+#triangle-right {
+  display: inline-block;
+	width: 0;
+	height: 0;
+  margin-left: 5px;
+	border-top: 4px solid transparent;
+	border-left: 7px solid #333;
+	border-bottom: 4px solid transparent;
+}
+
+.grey {
+  background: #FAFAFA;
 }
