@@ -2,82 +2,95 @@ body {
   background-color: #fafafa;
 }
 
-div#container {
-  height: 100%;
-  padding: 100px;
+/* ––––––––––––––––––––––––
+  Text format
+*/
+
+.summary h1 {
+  margin: 0 0 14px 0;
+  font-family: FranklinGothic-Medium, "Franklin Gothic", "Lucida Sans Unicode", Arial;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+.slide h1 {
+  text-transform: none;
 }
 
-div#container p {
-      font-family: 'Georgia';
-      line-height: 1.5em;
-      font-size: 2.2em;
-      background-color: #fff;
-      padding: 30px;
-      color: #252525;
+p {
+  padding: 0 0 20px 0;
+  margin: 0;
+  font-family: Georgia;
+  font-size: 17px;
+  line-height: 30px;
 }
-div#container a, div#container a:active, div#container a:hover {
+.summary p {
+  padding: 0;
+  font-style: italic;
+}
+
+a, a:active {
       display: inline-block;
       text-decoration: none;
       border-bottom: 1px solid #252525;
       color: #252525;
       cursor: pointer;
       font-style: italic;
-}
-div#container a:hover {
+} a:hover {
       border-bottom: 1px solid #FFB257;
 }
 
-section {
-  background: #fff;
-  padding: 50px 350px;
-  border-bottom: 1px solid #E1E1E1;
-}
-@media (max-width: 1280px) {
-  section {
-    padding: 30px 250px;
-  }
-}
-@media (max-width: 1024px) {
-  section {
-    padding: 50px;
-  }
-}
-
-section.summary h1 {
-  margin: 0 0 14px 0;
-  font-family: FranklinGothic-Medium;
-  font-size: 40px;
-  text-transform: uppercase;
-  color: #2C2D2D;
-  line-height: 50px;
-}
-
-section p {
-  padding: 0 0 20px 0;
-  margin: 0;
-  font-family: Georgia;
-  font-size: 17px;
-  color: #2C2D2D;
-  line-height: 30px;
-}
-section.summary p {
-  padding: 0;
-  font-style: italic;
-}
-
-section.summary a.readmore {
+.summary a.readmore {
   display: inline-block;
   margin: 30px 20px 0 0;
-  font-family: AvenirNext-Medium;
+  font-family: AvenirNext-Medium, "Franklin Gothic", "Lucida Sans Unicode", Arial;
   font-weight: bold;
+  font-style: normal;
   font-size: 14px;
   color: #333333;
   text-decoration: none;
   border-bottom: 1px solid #333;
-}
-section.summary a.readmore:hover {
+} .summary a.readmore:hover {
   border-color: #FFB257;
 }
+
+/* ––––––––––––––––––––––––
+  Layout
+*/
+
+.slide { background-color: #fff; }
+.slide#introduction { border: 50px solid #FAFAFA; border-radius: 55px;}
+
+.slide section {
+  width: 650px;
+  height: 400px;
+  margin: auto;
+  padding-top: 15%;
+} .slide#introduction section {
+  padding-top: 5%;
+}
+
+#article section {
+  background: #fff;
+  padding: 50px 400px;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media (max-width: 1280px) {
+  #article section {
+    padding: 30px 250px;
+  }
+}
+@media (max-width: 1024px) {
+  #article section {
+    padding: 50px;
+  }
+}
+
+img { display: block; margin: 0 auto 20px auto;}
+
+/* ––––––––––––––––––––––––
+  Icones
+*/
 
 #triangle-right {
   display: inline-block;
@@ -89,6 +102,27 @@ section.summary a.readmore:hover {
 	border-bottom: 4px solid transparent;
 }
 
-.grey {
-  background: #FAFAFA;
+.arrow-down {
+  display: inline-block;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/down_arrow_black.svg");
+  background-size: contain;
+  opacity: 0.3;
 }
+
+/* ––––––––––––––––––––––––
+  Color schemes
+*/
+
+.grey { background: #FAFAFA; color:#333;}
+.green { background-color: #57CB7F; }
+.blue { background-color: #00B0CA; }
+.pink { background-color: #FF4E4A; }
+.red { background-color: #D44937; color:#FAFAFA; }
+.purple { background-color: #895ECC; color:#333; }
+.yellow { background-color: #F4B400; color: #333; }
