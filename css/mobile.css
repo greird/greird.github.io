@@ -1,21 +1,22 @@
-@media (max-width: 640px) {
+@media (max-width: 800px) {
 
    body, element1, element2 {
       width: auto;
       margin: 0;
-      padding: 0px 40px;
+      padding: 0;
    }
+
+   .slide#introduction { border: none; border-radius: 0; }
+
+   .slide section { width: auto; padding: 20px; }
 
    p {
       font-size: 1.5em;
-      line-height: 2em;
+      line-height: 1.8em;
       padding: 0;
-      background-color: #fafafa;
    }
 
-   .hide_mobile {
-      display: none !important;
-   }
+   .hide_mobile { display: none !important; }
 
 }
 
