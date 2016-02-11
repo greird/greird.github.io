@@ -9,11 +9,25 @@
    .slide#introduction { border: none; border-radius: 0; }
 
    .slide section { width: auto; padding: 20px; }
+   #article section { padding: 20px; }
 
    p {
       font-size: 1.5em;
       line-height: 1.8em;
       padding: 0;
+   }
+   .summary a.readmore {
+     font-size: 1.5em;
+     line-height: 1.8em;
+     padding: 0;
+     border: none;
+   }
+
+   #triangle-right {
+    margin-left: 5px;
+   	border-top: 8px solid transparent;
+   	border-left: 15px solid #333;
+   	border-bottom: 8px solid transparent;
    }
 
    .hide_mobile { display: none !important; }

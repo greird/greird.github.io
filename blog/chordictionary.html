@@ -14,15 +14,21 @@
 <body>
 
 <div id="article">
-	<section class="summary">
+	<section class="summary yellow">
 	  <h1>Chordictionary JS</h1>
 	  <p>A Javascript library for dynamic chord recognition, generation and graphic representation for any fretted instrument.</p>
 	  <a class="readmore" href="http://www.chordictionary.com">Demo</a>
 	  <a class="readmore" href="http://github.com/greird/chordictionaryjs">Sources</a>
 	</section>
 	<section class="grey">
-	  <p>Nam tempus semper hendrerit. Sed pellentesque malesuada orci sit amet venenatis. Proin accumsan dui eget scelerisque hendrerit. Morbi venenatis, lectus ornare gravida dapibus, neque mauris volutpat ipsum, ac tempor nisi elit quis ipsum. Cras quis finibus sapien. Vivamus cursus consequat pulvinar.</p>
-	  <p>Maecenas non rutrum metus. Aenean leo lacus, faucibus nec massa laoreet, molestie eleifend elit. Mauris quam tellus, feugiat quis imperdiet eget, sollicitudin ac felis. Aenean rutrum metus sit amet quam tincidunt, et vehicula dui dictum. Aenean vehicula ipsum in libero cursus interdum. Proin tincidunt erat vitae augue accumsan, sit amet placerat erat luctus. Aliquam nulla neque, volutpat et lorem ut, euismod scelerisque turpis.<br /> Praesent sed nibh elementum, gravida nisi vitae, tincidunt enim. Aenean maximus orci ut dictum rhoncus.</p>
+		<h2>Chord Recognition</h2>
+		<p>In order to guess the name of a chord we need to find its formula. For instance, a Major Seventh chord is always composed of a root, a third, a fifth and a seventh <code>1-3-5-7</code> or <code>04711</code> in integer notation.</p>
+		<p> All the formulas are stored in the <code>MDL_CHORD_FORMULAS</code> constant. Here's the line for a Maj7 chords:</p>
+<pre>Javascript
+{formula:"1-3-5-7", integer:"04711", name:"Major seventh", suffix:"maj7" }
+</pre>
+		<h2>How it works</h2>
+		<p>The integer notation represent the number of semitones (or half steps) between each notes of a chord. Therefore, if we can calcultate the number of semitones between each notes, we'll be able to identify the nature of the chord.</p>
 	</section>
 </div>
 
