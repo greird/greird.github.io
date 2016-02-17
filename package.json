@@ -14,5 +14,12 @@
   "bugs": {
     "url": "https://github.com/greird/17587/issues"
   },
-  "homepage": "https://www.hubertfauconnier.com"
+  "homepage": "https://www.hubertfauconnier.com",
+  "devDependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.2",
+    "jshint": "^2.9.1"
+  }
 }
