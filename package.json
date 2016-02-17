@@ -1,0 +1,18 @@
+{
+  "name": "17587",
+  "version": "1.0.0",
+  "description": "My personal landing page.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greird/17587.git"
+  },
+  "author": "Hubert Fauconnier <h.fauconnier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greird/17587/issues"
+  },
+  "homepage": "https://www.hubertfauconnier.com"
+}
