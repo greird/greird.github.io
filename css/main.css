@@ -71,7 +71,7 @@ section {
 }
 
 .slide { background-color: #fff; }
-.slide#introduction { border: 50px solid #FAFAFA; border-radius: 55px;}
+.slide#introduction { border: 50px solid #FAFAFA; border-radius: 55px; }
 
 .slide section {
   width: 650px;
