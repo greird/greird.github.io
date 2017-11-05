@@ -8,8 +8,8 @@
 
    .slide#introduction { border: none; border-radius: 0; }
 
-   .slide section { width: auto; padding: 20px; }
-   #article section { padding: 20px; }
+   section, section.summary { width: auto; padding: 30px; }
+   section .content { padding: 0; width: 100%;}
 
    p {
       font-size: 1.5em;
