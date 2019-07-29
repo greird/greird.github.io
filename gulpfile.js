@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat');
+    browserSync = require('browser-sync').create();	
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
@@ -27,9 +28,18 @@ gulp.task('lint', function() {
         .pipe(jshint.reporter('default'));
 });
 
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
+
 // Default task
  gulp.task('default', ['watch'], function() {
-   gulp.start('lint', 'scripts', 'css');
+   gulp.start('lint', 'scripts', 'css', 'browser-sync');
  });
 
 // Watch
