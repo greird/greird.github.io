@@ -1,51 +1,47 @@
-// Load plugins
-var gulp = require('gulp'),
-    jshint = require('gulp-jshint'),
-    uglify = require('gulp-uglify'),
-    rename = require('gulp-rename'),
-    concat = require('gulp-concat');
-    browserSync = require('browser-sync').create();	
+// require(d) gulp for compatibility with sublime-gulp.
+var gulp = require('gulp');
+
+const { src, dest, series, parallel } = require('gulp');
+const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
+const jshint = require('gulp-jshint');
+const concat = require('gulp-concat');
+const browserSync = require('browser-sync').create();
 
 // Concatenate & Minify JS
-gulp.task('scripts', function() {
-    return gulp.src('js/main.js')
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(uglify({ preserveComments: "license" }))
-        .pipe(gulp.dest('js'))
-});
-
-// Concatenate CSS
-gulp.task('css', function() {
-    return gulp.src(['css/normalize.css', 'css/main.css', 'css/mobile.css'])
-        .pipe(concat('all.css'))
-        .pipe(gulp.dest('css'))
-});
+function minify() {
+	return gulp.src('js/main.js')
+	.pipe(rename({ suffix: '.min' }))
+	.pipe(uglify())
+	.pipe(gulp.dest('js'))
+}
 
 // Lint Task
-gulp.task('lint', function() {
-    return gulp.src('js/main.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
+function lint() {
+	return gulp.src('js/main.js')
+	.pipe(jshint())
+	.pipe(jshint.reporter('default'));
+}
+
+// Concatenate CSS
+function concatcss() {  
+	return gulp.src(['css/normalize.css', 'css/main.css', 'css/mobile.css'])
+	.pipe(concat('all.css'))
+	.pipe(gulp.dest('css'))
+}
 
 // Static server
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
+function browsersync() {
+	browserSync.init({
+		server: {
+			baseDir: "./"
+		}
+	});
+}
 
-// Default task
- gulp.task('default', ['watch'], function() {
-   gulp.start('lint', 'scripts', 'css', 'browser-sync');
- });
+exports.minify = minify;
+exports.lint = lint;
+exports.concatcss = concatcss;
+exports.browsersync = browsersync;
 
-// Watch
-gulp.task('watch', function() {
-
-  gulp.watch('js/main.js', ['lint', 'scripts']);
-  gulp.watch(['css/normalize.css', 'css/main.css', 'css/mobile.css'], ['css']);
-
-});
+exports.default = gulp.series(gulp.parallel(gulp.series(lint, minify), gulp.series(concatcss)), browsersync);
