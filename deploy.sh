@@ -4,7 +4,7 @@
 set -e
 
 # build
-gulp
+gulp build
 
 # navigate into the build output directory
 cd dist
