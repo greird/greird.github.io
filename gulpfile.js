@@ -35,8 +35,8 @@ function lint() {
 // Concatenate CSS
 function concatcss() {  
 	return gulp.src(['src/css/normalize.css', 'src/css/main.css', 'src/css/mobile.css'])
-	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(concatCss('main.css'))
+	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(gulp.dest('css'))
 }
 
