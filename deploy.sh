@@ -10,4 +10,4 @@ echo 'www.hubertfauconnier.com' > CNAME
 git add -A
 git commit -m 'deploy'
 
-git push https://github.com/greird/greird.github.io.git master
+git push https://github.com/greird/greird.github.io.git origin:master
