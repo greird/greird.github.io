@@ -50,6 +50,7 @@ function serve() {
 
 	// Watcher
 	gulp.watch("index.html").on('change', browserSync.reload);
+	gulp.watch("src/css/*.css").on('change', gulp.series(concatcss, browserSync.reload));
 }
 
 exports.lint = lint;

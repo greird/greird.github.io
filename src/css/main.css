@@ -7,55 +7,51 @@ body {
 */
 
 h1 {
-  margin: 0 0 14px 0;
+  margin: 0 0 0.5em 0;
   font-family: FranklinGothic-Medium, Arial;
-  font-size: 40px;
-  text-transform: uppercase;
+  font-size: 2.7em;
   line-height: 50px;
 }
-.slide h1 {
-  text-transform: none;
+#introduction h1 {
+  font-size: 3.7em;
 }
 
 p {
   padding: 0 0 20px 0;
   margin: 0;
-  font-family: Georgia;
-  font-size: 18px;
-  line-height: 32px;
-}
-.summary p {
-  padding: 0;
-  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.6em;
 }
 .content p {
   font-size: 20px;
   line-height: 34px;
 }
+#introduction p {
+  font-family: Georgia;
+}
 
 a, a:active {
       display: inline-block;
       text-decoration: none;
-      border-bottom: 1px solid #252525;
+      border-bottom: 1px solid lightgrey;
       color: #252525;
       cursor: pointer;
       font-style: italic;
 } a:hover {
-      border-bottom: 1px solid #FFB257;
+      border-bottom: 1px solid #252525;
 }
 
 .summary a.readmore {
   display: inline-block;
-  margin: 30px 20px 0 0;
+  margin: 0 20px 0 0;
   font-family: AvenirNext-Medium, "Franklin Gothic", "Lucida Sans Unicode", Arial;
   font-weight: bold;
   font-style: normal;
   font-size: 14px;
+  line-height: 2em;
   color: #333333;
   text-decoration: none;
   border-bottom: 1px solid #333;
-} .summary a.readmore:hover {
-  border-color: #FFB257;
 }
 
 pre,code  { font-size: 0.8em; font-family: 'Andale Mono', monospace; vertical-align: top}
@@ -74,14 +70,13 @@ section {
 .slide#introduction { border: 50px solid #FAFAFA; border-radius: 55px; }
 
 .slide section {
-  width: 650px;
+  width: 800px;
   margin: auto;
   padding-top: 15%;
   border: none;
 }
 
 section .content {
-  width: 650px;
   margin: 0 auto;
   padding: 50px;
 }
