@@ -40,6 +40,9 @@ a, a:active {
 } a:hover {
       border-bottom: 1px solid #252525;
 }
+#introduction a {
+  font-weight: normal;
+}
 
 .summary a.readmore {
   display: inline-block;
@@ -66,8 +69,13 @@ section {
   border-bottom: 1px solid #E1E1E1;
 }
 
-.slide { background-color: #fff; }
-.slide#introduction { border: 50px solid #FAFAFA; border-radius: 55px; }
+.slide { 
+  background-color: #fff; 
+}
+.slide#introduction { 
+  border: 50px solid #FAFAFA; 
+  border-radius: 55px; 
+}
 
 .slide section {
   width: 800px;

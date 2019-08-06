@@ -1,41 +1,67 @@
 @media (max-width: 800px) {
 
-   body, element1, element2 {
-      width: auto;
-      margin: 0;
-      padding: 0;
-   }
+	body, element1, element2 {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
 
-   .slide#introduction { border: none; border-radius: 0; }
+	.slide#introduction { 
+		border: none; 
+		padding: 50px 0;
+		border-radius: 0;
+	}
 
-   section, section.summary { width: auto; padding: 30px; }
-   section .content { padding: 0; width: 100%;}
+	section, section.summary { 
+		width: auto; 
+		padding: 50px 30px; 
+	} #introduction .summary {
+		padding: 30px;
+	}
 
-   p {
-      font-size: 1.5em;
-      line-height: 1.8em;
-      padding: 0;
-   }
-   .summary a.readmore {
-     font-size: 1.5em;
-     line-height: 1.8em;
-     padding: 0;
-     border: none;
-   }
+	section .content { 
+		padding: 0; 
+		width: 100%;
+	}
 
-   #triangle-right {
-    margin-left: 5px;
-   	border-top: 8px solid transparent;
-   	border-left: 15px solid #333;
-   	border-bottom: 8px solid transparent;
-   }
+	p {
+		font-size: 1.5em;
+		line-height: 1.6em;
+		padding: 0;
+	}
+	.summary a.readmore {
+		margin: 1.3em 1em 0 0;
+		font-size: 1.3em;
+		padding: 0;
+		border: none;
+	}
 
-   .hide_mobile { display: none !important; }
+	#introduction nav {
+		text-align: center;
+		position: fixed;
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 15px;
+		background-color: #fff;
+		left: 0;
+  	bottom: 0;
+	}
+
+	#triangle-right {
+		margin-left: 5px;
+		border-top: 8px solid transparent;
+		border-left: 15px solid #333;
+		border-bottom: 8px solid transparent;
+	}
+
+	.hide_mobile { display: none !important; }
 
 }
 
 @media (max-device-width:768px) and (orientation: landscape) {
-  html {
-   -webkit-text-size-adjust: 100%;
-  }
+	html {
+		-webkit-text-size-adjust: 100%;
+	}
 }
