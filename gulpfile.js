@@ -6,7 +6,6 @@ const clean = require('gulp-clean');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const jshint = require('gulp-jshint');
-const concat = require('gulp-concat');
 const concatCss = require('gulp-concat-css');
 const cleanCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();
